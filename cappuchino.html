@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cappuccino Coffee</title>
+    <link rel="stylesheet" href="espresso.css"> <!-- Link to the same CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Cappuccino: The Perfect Balance</h1>
+        <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cart.html">Add to Cart</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="cappuccino-details">
+            <h2>Discover Cappuccino</h2>
+            <img src="cappuccino.jpg" alt="A cup of creamy cappuccino" class="coffee-image">
+            <p>
+                Cappuccino is a popular coffee drink made with equal parts espresso, steamed milk, and milk foam. 
+                Its rich, creamy texture and smooth flavor make it a favorite among coffee lovers.
+            </p>
+        </section>
+        <section id="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+                <li>Freshly Ground Espresso Beans</li>
+                <li>Steamed Milk</li>
+                <li>Milk Foam</li>
+                <li>Filtered Water</li>
+            </ul>
+            <h4>Vegan Additions</h4>
+            <ul>
+                <li>Oat Milk</li>
+                <li>Almond Milk</li>
+                <li>Coconut Cream</li>
+            </ul>
+            <h4>Gluten-Free Options</h4>
+            <ul>
+                <li>Certified Gluten-Free Espresso Beans</li>
+                <li>Organic Syrups (Vanilla, Hazelnut, Caramel)</li>
+            </ul>
+        </section>
+        <section id="add-to-cart" data-item-id="cappuccino" data-item-name="Cappuccino" data-item-price="350" data-item-image="cappuccino.jpg">
+            <form id="add-to-cart-form">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1" required>
+                <br><br>
+                <button type="submit" id="add-to-cart-button">Add to Cart</button>
+            </form>
+        </section>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Brew & Bliss Cafe</p>
+</footer>
+
+<script src="cartscript.js"></script>
+</body>
+</html>

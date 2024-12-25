@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Sandwich</title>
+    <link rel="stylesheet" href="espresso.css"> <!-- Link to the same CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Club Sandwich: The Ultimate Triple-Decker</h1>
+        <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="club-sandwich-details">
+            <h2>Discover the Club Sandwich</h2>
+            <img src="club.jpg" alt="A delicious club sandwich with crispy bacon, turkey, and fresh vegetables" class="coffee-image">
+            <p>
+                The Club Sandwich is a classic American triple-decker sandwich made with layers of crispy bacon, tender turkey, 
+                fresh lettuce, juicy tomato, and creamy mayo, all piled between three slices of toasted bread. It's the perfect 
+                balance of flavors and textures in every bite, making it a must-try for any sandwich lover.
+            </p>
+        </section>
+        <section id="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+                <li>Toasted White Bread</li>
+                <li>Crispy Bacon</li>
+                <li>Grilled Turkey Breast</li>
+                <li>Lettuce</li>
+                <li>Tomato</li>
+                <li>Mayonnaise</li>
+            </ul>
+            <h4>Vegan Additions</h4>
+            <ul>
+                <li>Vegan Bacon</li>
+                <li>Vegan Mayo</li>
+                <li>Toasted Multigrain or Gluten-Free Bread</li>
+            </ul>
+            <h4>Gluten-Free Options</h4>
+            <ul>
+                <li>Gluten-Free Bread</li>
+                <li>Gluten-Free Turkey</li>
+            </ul>
+        </section>
+        <section id="add-to-cart" data-item-id="club-sandwich" data-item-name="Club Sandwich" data-item-price="180" data-item-image="club.jpg">
+            <form id="add-to-cart-form">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1" required>
+                <br><br>
+                <button type="submit" id="add-to-cart-button">Add to Cart</button>
+            </form>
+        </section>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Brew & Bliss Cafe</p>
+</footer>
+
+<script src="cartscript.js"></script>
+</body>
+</html>

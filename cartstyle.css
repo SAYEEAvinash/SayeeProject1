@@ -1,0 +1,177 @@
+/* Cart Page Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('cafebg.png'); /* Coffee-themed background */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333; /* Text color */
+}
+
+header {
+    background-color: #3E2723; /* Dark brown for the header */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+ul li {
+    margin: 0 15px;
+}
+
+ul li a {
+    color: #FFB6C1; /* Baby pink */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #F8BBD0; /* Light baby pink */
+}
+
+main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight white background to make content readable */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#cart-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cart-item {
+    background-color: #F5E1D3; /* Light beige for each cart item */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.cart-item:hover {
+    transform: translateY(-5px);
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.item-details h3 {
+    font-size: 1.3em;
+    color: #3E2723; /* Dark brown for item names */
+}
+
+.item-details p {
+    font-size: 1.1em;
+    color: #6D4C41; /* Medium brown for text */
+}
+
+.remove-btn {
+    background-color: #FFB6C1; /* Baby pink remove button */
+    color: #3E2723;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.remove-btn:hover {
+    background-color: #F8BBD0; /* Light baby pink */
+}
+
+.cart-summary {
+    background-color: #3E2723; /* Dark brown background for summary */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.cart-summary span {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.pay-btn {
+    background-color: #F8BBD0; /* Light baby pink button */
+    color: #3E2723;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    font-size: 1.2em;
+}
+
+.pay-btn:hover {
+    background-color: #FFB6C1; /* Baby pink on hover */
+}
+
+footer {
+    background-color: #3E2723;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .cart-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cart-item {
+        width: 100%;
+    }
+}

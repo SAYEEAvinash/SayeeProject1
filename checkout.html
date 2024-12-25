@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+        <nav>
+            <ul>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="checkout-summary">
+            <h2>Order Summary</h2>
+            <!-- Items dynamically populated -->
+        </section>
+
+        <div class="checkout-totals">
+            <p>Total: <span id="total-price">₹0</span></p>
+            <p>Service Charge: <span id="service-charge">₹0</span></p>
+            <p>Grand Total: <span id="grand-total">₹0</span></p>
+        </div>
+
+        <section id="checkout-form">
+            <h2>Billing Details</h2>
+            <form action="checkoutalert.html" method="post">
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="address">Address:</label><br>
+                <textarea id="address" name="address" rows="3" required></textarea><br><br>
+
+                <label for="pincode">Pincode:</label><br>
+                <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" required><br><br>
+
+                <h3>Payment Method</h3>
+                <p>Cash on Delivery Only</p>
+
+                <button type="submit">Confirm Order</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Brew & Bliss Cafe</p>
+    </footer>
+
+    <script src="cartscript.js"></script>
+</body>
+</html>
+
+

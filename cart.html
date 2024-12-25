@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="cartstyle.css">
+</head>
+<body>
+    <header>
+        <h1>Your Cart</h1>
+        <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </header>
+    
+    <main>
+        <!-- Cart Items Section -->
+        <section id="cart-items"></section>
+
+        <!-- Cart Summary Section -->
+        <div class="cart-summary">
+            <p>Total: <span id="total-price">₹0</span></p>
+            <p>Service Charge: <span id="service-charge">₹5</span></p>
+            <p>Grand Total: <span id="grand-total">₹0</span></p>
+        </div>
+
+        <!-- Proceed to Checkout Button -->
+        <button class="pay-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Brew & Bliss Cafe</p>
+    </footer>
+
+    <!-- Cart Handling Script -->
+    <script src="cartscript.js"></script>
+</body>
+</html>
+
+
+

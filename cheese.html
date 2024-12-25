@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grilled Cheese</title>
+    <link rel="stylesheet" href="espresso.css"> <!-- Link to the same CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Grilled Cheese: The Perfect Comfort Food</h1>
+        <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="grilled-cheese-details">
+            <h2>Discover Grilled Cheese</h2>
+            <img src="cheese.jpg" alt="A perfectly golden grilled cheese sandwich" class="coffee-image">
+            <p>
+                Grilled cheese is a classic comfort food made with toasted bread and melted cheese. The perfect balance 
+                of crispy on the outside and gooey on the inside, this dish is a favorite for all ages. It pairs well 
+                with tomato soup or a fresh salad for the ultimate meal.
+            </p>
+        </section>
+        <section id="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+                <li>Freshly Sliced Bread</li>
+                <li>Butter</li>
+                <li>Cheddar Cheese</li>
+                <li>American Cheese</li>
+            </ul>
+            <h4>Vegan Additions</h4>
+            <ul>
+                <li>Vegan Butter</li>
+                <li>Vegan Cheese (e.g., Daiya, Follow Your Heart)</li>
+            </ul>
+            <h4>Gluten-Free Options</h4>
+            <ul>
+                <li>Gluten-Free Bread</li>
+                <li>Organic Gluten-Free Cheese</li>
+            </ul>
+        </section>
+        <section id="add-to-cart" data-item-id="grilled-cheese" data-item-name="Grilled Cheese Sandwich" data-item-price="150" data-item-image="cheese.jpg">
+            <form id="add-to-cart-form">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1" required>
+                <br><br>
+                <button type="submit" id="add-to-cart-button">Add to Cart</button>
+            </form>
+        </section>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Brew & Bliss Cafe</p>
+</footer>
+
+<script src="cartscript.js"></script>
+</body>
+</html>

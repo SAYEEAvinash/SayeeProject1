@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Sandwich with Eggs and Avocado</title>
+    <link rel="stylesheet" href="espresso.css"> <!-- Link to the same CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Club Sandwich with Eggs and Avocado</h1>
+        <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="club-sandwich-details">
+            <h2>Discover the Club Sandwich</h2>
+            <img src="avocado.jpg" alt="A delicious club sandwich with eggs and avocado" class="coffee-image">
+            <p>
+                Our Club Sandwich is a wholesome, satisfying meal, made with freshly toasted bread, creamy avocado, and 
+                perfectly cooked eggs. It's a perfect balance of flavors, offering a healthy and delicious twist on the 
+                traditional club sandwich. Ideal for any time of the day!
+            </p>
+        </section>
+        <section id="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+                <li>Freshly Toasted Bread</li>
+                <li>Perfectly Cooked Eggs (Fried or Scrambled)</li>
+                <li>Ripe Avocado</li>
+            </ul>
+            <h4>Vegan Additions</h4>
+            <ul>
+                <li>Vegan Eggs (Scrambled Tofu)</li>
+                <li>Avocado (Naturally Vegan)</li>
+            </ul>
+            <h4>Gluten-Free Options</h4>
+            <ul>
+                <li>Gluten-Free Bread</li>
+            </ul>
+        </section>
+        <section id="add-to-cart" data-item-id="eggs-avocado" data-item-name="Eggs and Avocado Toast" data-item-price="220" data-item-image="avocado.jpg">
+            <form id="add-to-cart-form">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1" required>
+                <br><br>
+                <button type="submit" id="add-to-cart-button">Add to Cart</button>
+            </form>
+        </section>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Brew & Bliss Cafe</p>
+</footer>
+
+<script src="cartscript.js"></script>
+</body>
+</html>

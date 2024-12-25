@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latte Coffee</title>
+    <link rel="stylesheet" href="espresso.css">
+</head>
+<body>
+    <header>
+        <h1>Latte: Smooth and Creamy Coffee</h1>
+        <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            li><a href="cart.html">Cart</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="latte-details">
+            <h2>Discover Latte</h2>
+            <img src="latte.jpg" alt="A cup of creamy latte" class="coffee-image">
+            <p>
+                Latte is a smooth and creamy coffee made with rich espresso and steamed milk. 
+                It’s the perfect balance of coffee and milk, providing a velvety texture and rich flavor.
+            </p>
+        </section>
+        <section id="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+                <li>Espresso</li>
+                <li>Steamed Milk</li>
+                <li>Foamed Milk</li>
+            </ul>
+            <h4>Vegan Additions</h4>
+            <ul>
+                <li>Almond Milk</li>
+                <li>Oat Milk</li>
+                <li>Coconut Milk</li>
+            </ul>
+            <h4>Gluten-Free Options</h4>
+            <ul>
+                <li>Gluten-Free Syrups (Vanilla, Hazelnut, Caramel)</li>
+            </ul>
+        </section>
+        <section id="add-to-cart" data-item-id="latte" data-item-name="Latte" data-item-price="350" data-item-image="latte.jpg">
+            <h3>Add to Cart</h3>
+            <form id="add-to-cart-form">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1" required>
+                <br><br>
+                <button type="submit" id="add-to-cart-button">Add to Cart</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Brew & Bliss Cafe</p>
+    </footer>
+
+    <script src="cartscript.js"></script>
+</body>
+</html>
+

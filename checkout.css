@@ -1,0 +1,143 @@
+/* checkoutstyle.css */
+
+/* General Styles */
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7ebe8; /* Pastel background */
+    color: #5e4636; /* Coffee brown */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #a67c52; /* Rich coffee brown */
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header ul li {
+    display: inline;
+}
+
+header ul li a {
+    color: #ffe6cc; /* Light pastel tone */
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* Main Section */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #fff8f3; /* Soft cream */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #d1b8a1; /* Light coffee */
+}
+
+main h2 {
+    color: #8c5c39; /* Warm brown */
+    border-bottom: 2px solid #d1b8a1;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+/* Order Summary Section */
+#order-summary ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+#order-summary ul li {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #6f4e37; /* Coffee tone */
+}
+
+#order-summary p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6b3f2c; /* Rich coffee brown */
+}
+
+/* Form Styles */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #5e4636; /* Coffee brown */
+}
+
+form input, 
+form textarea, 
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d1b8a1; /* Light coffee */
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff; /* White background for inputs */
+    color: #5e4636;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+form button {
+    background-color: #8c5c39; /* Warm brown */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #6b3f2c; /* Darker coffee brown */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #a67c52; /* Rich coffee brown */
+    color: #ffe6cc; /* Light pastel tone */
+    padding: 15px 0;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+

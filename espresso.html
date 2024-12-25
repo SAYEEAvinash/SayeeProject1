@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espresso Coffee</title>
+    <link rel="stylesheet" href="espresso.css">
+</head>
+<body>
+    <header>
+        <h1>Espresso: The Bold and Rich Coffee</h1>
+        <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="espresso-details">
+            <h2>Discover Espresso</h2>
+            <img src="espresso.jpg" alt="A cup of rich espresso" class="coffee-image">
+            <p>
+                Espresso is the heart and soul of every coffee lover’s dream. Known for its bold flavor and velvety texture, 
+                it's the purest form of coffee extracted from finely-ground beans under high pressure.  
+            </p>
+        </section>
+        <section id="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+                <li>Freshly Ground Espresso Beans</li>
+                <li>Filtered Water</li>
+            </ul>
+            <h4>Vegan Additions</h4>
+            <ul>
+                <li>Oat Milk</li>
+                <li>Almond Milk</li>
+                <li>Coconut Cream</li>
+            </ul>
+            <h4>Gluten-Free Options</h4>
+            <ul>
+                <li>Certified Gluten-Free Espresso Beans</li>
+                <li>Organic Syrups (Vanilla, Hazelnut, Caramel)</li>
+            </ul>
+        </section>
+        <section id="add-to-cart" data-item-id="espresso" data-item-name="Espresso" data-item-price="300" data-item-image="espresso.jpg">
+            <h3>Add to Cart</h3>
+            <form id="add-to-cart-form" onsubmit="event.preventDefault(); addToCart('Espresso', 300, 'espresso.jpg', document.getElementById('quantity').value);">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1" required>
+                <br><br>
+                <button type="submit" id="add-to-cart-button">Add to Cart</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Brew & Bliss Cafe</p>
+    </footer>
+
+    <script src="cartscript.js"></script>
+</body>
+</html>
+
+

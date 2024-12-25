@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strawberry Cheesecake</title>
+    <link rel="stylesheet" href="espresso.css"> <!-- Link to the same CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Strawberry Cheesecake</h1>
+        <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="strawberry-cheesecake-details">
+            <h2>Delight in the Creamy Strawberry Cheesecake</h2>
+            <img src="straw.jpg" alt="A delicious slice of strawberry cheesecake" class="coffee-image">
+            <p>
+                Indulge in the light and creamy texture of our Strawberry Cheesecake. With a perfect balance of sweet and tangy 
+                flavor, this cheesecake is topped with fresh, ripe strawberries and a smooth strawberry glaze. Whether you’re 
+                celebrating a special occasion or just indulging in a sweet treat, it’s sure to please any palate.
+            </p>
+        </section>
+        <section id="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+                <li>Cream Cheese</li>
+                <li>Fresh Strawberries</li>
+                <li>Butter</li>
+                <li>Graham Crackers</li>
+                <li>Sugar</li>
+                <li>Vanilla Extract</li>
+                <li>Eggs</li>
+                <li>Strawberry Glaze</li>
+            </ul>
+            <h4>Vegan Additions</h4>
+            <ul>
+                <li>Vegan Cream Cheese</li>
+                <li>Vegan Butter</li>
+                <li>Non-Dairy Strawberries Glaze</li>
+                <li>Vegan Eggs (Tofu or Flaxseed)</li>
+            </ul>
+            <h4>Gluten-Free Options</h4>
+            <ul>
+                <li>Gluten-Free Graham Crackers</li>
+            </ul>
+        </section>
+        <section id="add-to-cart" data-item-id="straw" data-item-name="Strawberry cheesecake" data-item-price="50" data-item-image="straw.jpg">
+            <form id="add-to-cart-form">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1" required>
+                <br><br>
+                <button type="submit" id="add-to-cart-button">Add to Cart</button>
+            </form>
+        </section>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Brew & Bliss Cafe</p>
+</footer>
+
+<script src="cartscript.js"></script>
+</body>
+</html>

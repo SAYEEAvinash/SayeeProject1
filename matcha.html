@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcha Latte</title>
+    <link rel="stylesheet" href="espresso.css"> <!-- Link to the same CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Matcha Latte: The Green Delight</h1>
+        <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="matcha-latte-details">
+            <h2>Discover Matcha Latte</h2>
+            <img src="matcha.jpg" alt="A cup of creamy matcha latte" class="coffee-image">
+            <p>
+                The Matcha Latte is a calming, vibrant green tea latte made from finely ground matcha powder, 
+                steamed milk, and a touch of sweetness. It's a healthy and flavorful alternative to regular coffee lattes.
+            </p>
+        </section>
+        <section id="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+                <li>High-Quality Matcha Powder</li>
+                <li>Steamed Milk</li>
+                <li>Filtered Water</li>
+                <li>Sweetener (optional)</li>
+            </ul>
+            <h4>Vegan Additions</h4>
+            <ul>
+                <li>Oat Milk</li>
+                <li>Almond Milk</li>
+                <li>Coconut Milk</li>
+            </ul>
+            <h4>Gluten-Free Options</h4>
+            <ul>
+                <li>Certified Gluten-Free Matcha Powder</li>
+                <li>Organic Syrups (Vanilla, Hazelnut, Maple)</li>
+            </ul>
+        </section>
+        <section id="add-to-cart" data-item-id="matcha" data-item-name="Matcha Latte" data-item-price="400" data-item-image="matcha.jpg">
+            <form id="add-to-cart-form">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1" required>
+                <br><br>
+                <button type="submit" id="add-to-cart-button">Add to Cart</button>
+            </form>
+        </section>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Brew & Bliss Cafe</p>
+</footer>
+
+<script src="cartscript.js"></script>
+</body>
+</html>

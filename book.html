@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking:Brew & Bliss Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Book a Table @ Brew & Bliss Cafe</h1>
+        <br>
+        <nav>
+        <ul>
+             <li><a href="index.html">HOME</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Savor the flavor—your perfect table is just a booking away!</h2>
+        <div class="block";>
+            <form id="form" action="booking.html">
+                <fieldset id="form">
+                     <div><br>
+                    <label for="username">Login ID:</label>
+                    <input type="text" id="username" required><br><br>
+                    </div>
+                    <div>
+                    <label for="email">Registered Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    </div>
+                    <div>
+                    <label for="bookdate">What date would you like to book your table for?</label><br>
+                    <input type="date" min="2024-12-16" id="bookdate" name="bookdate" required><br><br>
+                    </div>
+                    <div>
+                     <label for="number">How many people?</label><br>
+                     <input type="number" id="number" required><br><br>
+                     </div>
+                    <div>
+                    <label for="password">Enter your password:</label><br>
+                    <input type="password" id="password" minlength="8" required><br><br>
+                    </div>
+                    <div>
+                    <button type="submit" >Book</button>
+                    </div>
+                    <p id="login-message" class="hidden"></p>
+                    </fieldset>
+            </form>
+        </div>
+   </main>
+   <footer>
+   <p>&copy; 2024 Brew & Bliss</p>
+   </footer>
+   <script src="script.js"></script>
+</body>      
+</html>        
